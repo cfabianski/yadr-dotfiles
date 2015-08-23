@@ -1,0 +1,4 @@
+nnoremap tn :tabnew<CR>
+set mouse=a
+
+" set shell=/bin/zsh
