@@ -10,3 +10,4 @@
 " dashes are very common, and in position that require
 " a lot of hand movement. Vim to the rescue
 "
+nmap <C-i> :NERDTreeToggle<CR>

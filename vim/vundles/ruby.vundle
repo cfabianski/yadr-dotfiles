@@ -1,6 +1,6 @@
 Bundle "tpope/vim-rails.git"
 Bundle "tpope/vim-rake.git"
-Bundle "keith/rspec.vim"
+Bundle 'thoughtbot/vim-rspec'
 Bundle "skwp/vim-spec-finder"
 Bundle "ck3g/vim-change-hash-syntax"
 Bundle "tpope/vim-bundler"
