@@ -123,5 +123,5 @@ map <silent> ,hp :!open -a Safari %<CR><CR>
 
 " Map Ctrl-x and Ctrl-z to navigate the quickfix error list (normally :cn and
 " :cp)
-nnoremap <silent> <C-x> :cn<CR>
-nnoremap <silent> <C-z> :cp<CR>
+" nnoremap <silent> <C-x> :cn<CR>
+" nnoremap <silent> <C-z> :cp<CR>
