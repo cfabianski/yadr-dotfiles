@@ -22,6 +22,10 @@
 
   #via http://stackoverflow.com/questions/5188320/how-can-i-get-a-list-of-git-branches-ordered-by-most-recent-commit
   recent-branches = !git for-each-ref --count=15 --sort=-committerdate refs/heads/ --format='%(refname:short)'
+  delete-merged = "!git branch --merged master | grep -v \"*\" | grep -v master | xargs git branch -D"
+
+  # Get the SHA
+  get-sha = "!echo \"$(git rev-parse HEAD)\" | pbcopy"
 
   # branch
   b = branch -v                     # branch (verbose)
@@ -119,6 +123,7 @@
   # instead of a/b/c/d as prefixes for patches
   mnemonicprefix = true
 	algorithm = patience
+  compactionHeuristic = true
 [rerere]
   # Remember my merges
   # http://gitfu.wordpress.com/2008/04/20/git-rerere-rereremember-what-you-did-last-time/

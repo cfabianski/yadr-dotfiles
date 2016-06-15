@@ -5,7 +5,7 @@ nnoremap <silent> \bf ^ibefore { <esc>$a }
 nnoremap <silent> \sp ^ispecify { <esc>$a }
 
 " RSpec.vim mappings
-let g:rspec_command = ":!clear; spring bundle exec rspec -f doc {spec}"
+let g:rspec_command = ":!clear; bundle exec rspec -f doc {spec}"
 
 map <Leader>t :call RunCurrentSpecFile()<CR>
 map <Leader>s :call RunNearestSpec()<CR>
