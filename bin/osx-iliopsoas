@@ -31,7 +31,7 @@ defaults write NSGlobalDomain KeyRepeat -int 2
 defaults write NSGlobalDomain InitialKeyRepeat -int 15
 
 # fast trackpad
-defaults write NSGlobalDomain "com.apple.trackpad.scaling" 3 
+defaults write NSGlobalDomain "com.apple.trackpad.scaling" 3
 defaults write -g com.apple.trackpad.scaling 3
 
 # haptic force
@@ -130,9 +130,14 @@ defaults write com.apple.dock minimize-to-application -bool true
 defaults write com.apple.dock autohide -bool true
 
 # Turn on magnification
-defaults write com.apple.dock magnification -bool false 
+defaults write com.apple.dock magnification -bool false
 
 # Disable continuous spell checking
 defaults write com.apple.messageshelper.MessageController SOInputLineSettings -dict-add "continuousSpellCheckingEnable" -bool false
+
+# Move screenshots to its own folder
+mkdir ~/Pictures/Screenshots/
+defaults write com.apple.screencapture location ~/Pictures/Screenshots/
+killall SystemUIServer
 
 echo "Done. Note that some of these changes require a logout/restart to take effect."

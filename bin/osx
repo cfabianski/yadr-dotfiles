@@ -177,6 +177,11 @@ defaults write com.apple.dock itunes-notifications -bool true
 # Disable shadow in screenshots
 defaults write com.apple.screencapture disable-shadow -bool true
 
+# Move screenshots to its own folder
+mkdir ~/Pictures/Screenshots/
+defaults write com.apple.screencapture location ~/Pictures/Screenshots/
+killall SystemUIServer
+
 # Disable Safari’s thumbnail cache for History and Top Sites
 defaults write com.apple.Safari DebugSnapshotsUpdatePolicy -int 2
 
