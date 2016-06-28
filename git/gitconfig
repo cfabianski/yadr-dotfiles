@@ -25,7 +25,7 @@
   delete-merged = "!git branch --merged master | grep -v \"*\" | grep -v master | xargs git branch -D"
 
   # Get the SHA
-  get-sha = "!echo -n \"$(git rev-parse HEAD)\" | pbcopy"
+  get-sha = "!/bin/bash -c 'echo -n $(git rev-parse HEAD) | pbcopy'"
 
   # branch
   b = branch -v                     # branch (verbose)
@@ -122,7 +122,7 @@
   # Git diff will use (i)ndex, (w)ork tree, (c)ommit and (o)bject
   # instead of a/b/c/d as prefixes for patches
   mnemonicprefix = true
-	algorithm = patience
+  algorithm = patience
   compactionHeuristic = true
 [rerere]
   # Remember my merges
@@ -131,6 +131,6 @@
 [include]
   path = .gitconfig.user
 [user]
-	signingkey = cfabianski@me.com
+  signingkey = cfabianski@me.com
 [commit]
-	gpgsign = true
+  gpgsign = true
