@@ -132,5 +132,7 @@
   path = .gitconfig.user
 [user]
   signingkey = cfabianski@me.com
+	name = Cédric Fabianski
+	email = cfabianski@me.com
 [commit]
   gpgsign = true
