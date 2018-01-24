@@ -9,6 +9,7 @@ let g:syntastic_quiet_messages = {'level': 'warnings'}
 
 let g:syntastic_ruby_checkers = ['mri', 'rubocop', 'rubylint']
 let g:syntastic_ruby_rubocop_exec = '/Users/cfabianski/.rvm/gems/ruby-2.2.3/bin/rubocop'
+let g:syntastic_javascript_checkers = []
 
 " I have no idea why this is not working, as it used to
 " be a part of syntastic code but was apparently removed
