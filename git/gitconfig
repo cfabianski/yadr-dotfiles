@@ -130,9 +130,9 @@
   enabled = true
 [include]
   path = .gitconfig.user
-[user]
-  signingkey = cfabianski@me.com
-	name = Cédric Fabianski
-	email = cfabianski@me.com
+[includeIf "gitdir:~/GitHub/Bearer/"]
+  path = .gitconfig-bearer
+[includeIf "gitdir:~/"]
+  path = .gitconfig-personal
 [commit]
   gpgsign = true
