@@ -136,3 +136,5 @@
   path = .gitconfig-personal
 [commit]
   gpgsign = true
+[pull]
+	ff = only
